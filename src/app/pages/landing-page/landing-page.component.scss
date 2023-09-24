@@ -1,0 +1,211 @@
+* {
+  .signup {
+    height: 30px;
+    width: 120px;
+    font-size: 12px;
+    padding: 5px 5px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    text-decoration: none;
+
+    img {
+      width: 15px;
+    }
+  }
+  .signup:hover{
+    cursor: pointer;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../assets/images/medium-shot-graduate-student-holding-diploma\ 1\ \(1\).png") no-repeat;
+    background-size: cover;
+
+  color: #fff;
+  h1 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+  p {
+    font-family: "DM Serif Display", serif;
+    font-size: 16px;
+  }
+}
+section {
+  text-align: center;
+}
+.univs {
+  padding-top: 50px;
+  height: 70vh;
+  background-color: var(--background-color);
+
+  h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .more {
+    text-align: right;
+    margin-right: 25%;
+    margin-top: 30px;
+    margin-bottom: -35px;
+    a {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 500;
+      display: inline-block;
+
+      img {
+        width: 20px;
+        margin-bottom: -5px;
+      }
+    }
+  }
+  .univCarts {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: 50px auto 0px;
+  }
+}
+.objectifs {
+  height: 50vh;
+  margin: 30px 0px 0px;
+
+  h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .obj-container {
+    display: flex;
+    width: 80%;
+    margin: 30px auto 0px;
+    justify-content: space-around;
+
+    .objectif {
+      box-sizing: border-box;
+      height: 200px;
+      width: 145px;
+      display: flex;
+      flex-direction: column;
+
+      .icon {
+        flex-basis: 30%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .circle3 {
+          height: 54px;
+          width: 54px;
+          background-color: var(--primary-color);
+          opacity: 25%;
+          border-radius: 5em;
+          position: absolute;
+          z-index: -1;
+        }
+
+        .cirle2 {
+          position: absolute;
+          height: 40px;
+          width: 40px;
+          background-color: var(--primary-color);
+          opacity: 50%;
+          border-radius: 4em;
+          // z-index: 1;
+          // margin: 6px auto ;
+          top: 6.5px;
+          left: 52.5px;
+        }
+        .circle1 {
+          height: 28px;
+          width: 28px;
+          background-color: var(--primary-color);
+          color: #fff;
+          opacity: 75%;
+          border-radius: 4em;
+          position: absolute;
+          top: 12.5px;
+          left: 58.5px;
+          z-index: 1;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          font-size: 15px;
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+
+        h3 {
+          font-family: "DM Serif Display", serif;
+          font-size: 13px;
+          font-weight: 400;
+        }
+
+        p {
+          font-size: 9px;
+          font-weight: 300;
+          padding: 10px 0px 0px;
+          text-decoration: center;
+          word-wrap: break-word;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 5; /* number of lines to show */
+          line-clamp: 5;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+}
+.img2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../assets/images/young-student-learning-library\ 1.png") no-repeat;
+    background-size: cover;
+
+  h1{
+    color: white;
+    font-family: "DM Serif Display", serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: left;
+    position: absolute;
+    right: 50px;
+    top: 300px;
+  }
+  .signup{
+    position: absolute;
+    right: 250px;
+    top: 380px;
+  }
+}

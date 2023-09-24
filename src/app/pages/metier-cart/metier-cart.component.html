@@ -1,0 +1,29 @@
+<a [routerLink]="['../metier', metier.id]">
+    <div class="container">
+      <img
+        [src]="metier.img"
+        alt=""
+      />
+      <div class="content">
+        <h3>{{ metier.name | titlecase }}</h3>
+        <div class="ratings">
+          <div class="full-stars" >
+            <i class="bi bi-star-fill" *ngFor="let star of full" ></i>
+          </div>
+          <div class="half-stars" >
+            <i class="bi bi-star-half" *ngFor="let star of half"  ></i>
+          </div>
+          <div class="empty-stars" >
+            <i class="bi bi-star-fill empty" *ngFor="let star of empty"  ></i>
+          </div>
+        </div>
+        <p>{{ metier.fee | currency:'XAF'}}</p>
+        <div class="dept-container">
+          <div class="department" *ngFor="let dept of metier.departments">
+            {{ dept.name }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  

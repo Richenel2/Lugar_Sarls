@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="career">
+        <h2>Vous etes fait pour etre :</h2>
+        <p>Voici quelques ecole qui pourrait vous plaire </p>
+        <div class="career-container">
+            <!-- <div class="career" *ngFor="let career of careerData; index as i"> -->
+                <app-univ-cart  *ngFor="let univ of univData" [university]="univ"></app-univ-cart>
+            <!-- </div> -->
+        </div>
+
+        <p class="metier">Voici quelques metiers qui pourrait vous interesser </p>
+        <div class="career-container">
+            <app-metier-cart *ngFor="let career of  careerData" [metier]="career"></app-metier-cart>
+        </div>
+
+    </div>
+</div>

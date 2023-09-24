@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="search">
+    <div class="search-bar">
+      <div class="img">
+        <img src="../../../assets/icons/Search.png" alt="" />
+      </div>
+      <input type="text" placeholder="Search" [(ngModel)]="filters" 
+      (keyup)="getSearch($any($event.target).value)"/>
+    </div>
+    <p>Recherche indexe par #{{ filters }}</p>
+  </div>
+  <!-- <div class="search">
+    <input
+      type="text"
+      placeholder="Filter by city"
+      [(ngModel)]="filters"
+      (keyup)="getSearch($any($event.target).value)"
+    />
+    <p>Recherche indexe par {{ filters }}</p> -->
+  <!-- </div> -->
+  <div class="univs">
+    <app-univ-cart
+      *ngFor="let univ of universityData"
+      [university]="univ"
+    ></app-univ-cart>
+  </div>
+</div>

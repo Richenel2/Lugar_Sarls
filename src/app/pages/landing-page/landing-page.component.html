@@ -1,0 +1,107 @@
+<header class="header">
+  <h1>Vous vous inquietez pour votre avenir ?</h1>
+  <div>Arretez de stresser, avec</div>
+
+  <p>LUGAR TROUVER LA FORMATION QUI VOUS CONVIENT</p>
+  <a class="signup" routerLink="signup">
+    <img src="../../../assets/icons/Filter_big.png" alt="" /> &nbsp;Se connecter
+  </a>
+</header>
+<section class="univs">
+  <h1>VOUS RECHERCHEZ L’ECOLE DE VOS REVES ??</h1>
+  <p>nous vous proposons les meilleurs universites du pays</p>
+  <div class="more">
+    <a routerLink="university"
+      >Voir Plus &nbsp; <img src="../../../assets/icons/Arrow_right.png" alt=""
+    /></a>
+  </div>
+  <div class="univCarts">
+    <div *ngFor="let univ of universityData; index as i">
+      <app-univ-cart [university]="univ" *ngIf="i < 3"></app-univ-cart>
+    </div>
+  </div>
+</section>
+<section class="objectifs">
+  <h1>Nos objectifs</h1>
+  <div class="obj-container">
+    <div class="objectif">
+      <div class="icon">
+        <div class="circle3"></div>
+        <div class="cirle2"></div>
+        <div class="circle1">1</div>
+      </div>
+      <div class="content">
+        <h3>Nos objectifs</h3>
+        <p>
+          Quis officia occaecat magna dolore nisi amet amet laborum ad anim
+          consequat nostrud.
+        </p>
+      </div>
+    </div>
+    <div class="objectif">
+      <div class="icon">
+        <div class="circle3"></div>
+        <div class="cirle2"></div>
+        <div class="circle1">2</div>
+      </div>
+      <div class="content">
+        <h3>Nos objectifs</h3>
+        <p>
+          Quis officia occaecat magna dolore nisi amet amet laborum ad anim
+          consequat nostrud. Nulla reprehenderit exercitation ad voluptate
+          proident consectetur.
+        </p>
+      </div>
+    </div>
+    <div class="objectif">
+      <div class="icon">
+        <div class="circle3"></div>
+        <div class="cirle2"></div>
+        <div class="circle1">3</div>
+      </div>
+      <div class="content">
+        <h3>Nos objectifs</h3>
+        <p>
+          Quis officia occaecat magna dolore nisi amet amet laborum ad anim
+          consequat nostrud. Nulla reprehenderit exercitation ad voluptate
+          proident consectetur.
+        </p>
+      </div>
+    </div>
+    <div class="objectif">
+      <div class="icon">
+        <div class="circle3"></div>
+        <div class="cirle2"></div>
+        <div class="circle1">4</div>
+      </div>
+      <div class="content">
+        <h3>Nos objectifs</h3>
+        <p>
+          Quis officia occaecat magna dolore nisi amet amet laborum ad anim
+          consequat nostrud. Nulla reprehenderit exercitation ad voluptate
+          proident consectetur.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="img2">
+  <h1>VOTRE FORMATION N’ATTEND <br>PLUS QUE VOUS</h1>
+  <a class="signup" routerLink="signup">
+    <img src="../../../assets/icons/Filter_big.png" alt="" /> &nbsp;Se connecter
+  </a>
+</section>
+<section class="univs">
+    <h1>Les meilleurs domaines de formation</h1>
+  <p>nous vous proposons les domaines les mieux payer du pays</p>
+  <div class="more">
+    <a routerLink="metier"
+      >Voir Plus &nbsp; <img src="../../../assets/icons/Arrow_right.png" alt=""
+    /></a>
+  </div>
+  <div class="univCarts">
+    <div *ngFor="let metier of metiersData; index as i">
+      <app-metier-cart [metier]="metier" *ngIf="i < 3"></app-metier-cart>
+    </div>
+  </div>
+</section>

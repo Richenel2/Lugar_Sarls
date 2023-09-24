@@ -1,0 +1,98 @@
+<div class="container">
+  <div class="form">
+    <form action=""#f="ngForm" (ngSubmit)="submit()">
+      <h1>Get Started Now</h1>
+      <label for="name"
+        >Name <br /><input
+        class="input"
+          [ngClass]="{ error: name.invalid && name.touched }"
+          ngModel
+          required
+          #name="ngModel"
+          [(ngModel)]="nom"
+          name="name"
+          type="text"
+          placeholder="Enter your name"
+        />
+      </label>
+      <div class="alert alert-danger" *ngIf="name.invalid && name.touched">
+        Name is required
+      </div>
+      <br />
+      <label for="email"
+        >Email address
+        <br />
+        <input
+        class="input"
+          #email="ngModel"
+          type="email"
+          name="email"
+          ngModel
+          [(ngModel)]="mail"
+          required
+          placeholder="Enter your email"
+        />
+      </label>
+      <div class="alert alert-danger" *ngIf="email.invalid && email.touched">
+        Email is required
+      </div>
+      <br />
+      <label for="password"
+        >Password <br /><input
+        class="input"
+          ngModel
+          #password="ngModel"
+          [(ngModel)]="pass"
+          required
+          name="password"
+          type="password"
+          placeholder="Enter your password"
+        />
+      </label>
+      <div
+        class="alert alert-danger"
+        *ngIf="password.invalid && password.touched"
+      >
+        Password is required
+      </div>
+      <br />
+      <label for="agree" class="agree">
+        <input
+          ngModel
+          #agree="ngModel"
+          required
+          name="agree"
+          type="checkbox"
+          class="agree"
+
+        />
+        I agree to the <a href="">terms & policy</a>
+      </label>
+      <div class="alert alert-danger" *ngIf="agree.invalid && agree.touched">
+        You have to agree to our terms and conditions
+      </div>
+      <br />
+      <button type="submit"[disabled]="f.invalid">Sign Up</button>
+    </form>
+    <div class="secondary">
+      <p>or</p>
+      <div class="other">
+      
+        <a href=""
+          ><img src="../../../assets/icons/icons8-google 1.png" alt="" />
+          &nbsp;Sign in with Google</a
+        >
+        <a href=""
+          ><img
+            src="../../../assets/icons/icons8-apple-logo 1.png"
+            alt=""
+          />&nbsp;Sign in with Apple</a
+        >
+      </div>
+      <div class="signin">
+        Have an account?<a routerLink="/signin">SignIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="img"></div>
+</div>

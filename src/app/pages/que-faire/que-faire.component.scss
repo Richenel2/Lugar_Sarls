@@ -1,0 +1,71 @@
+.banner {
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 100px;
+  box-sizing: border-box;
+  padding: 35px 20px;
+  color: white;
+    font-family: "DM Serif Display", serif;
+    font-size: 18px;
+}
+.container {
+  width: 100%;
+  margin: 30px 0px;
+
+  .questionnaire {
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 15px 0px var(--borders);
+    box-sizing: border-box;
+    padding: 30px 20px;
+    position: relative;
+
+    .question{
+        h2{
+            margin: 10px 0px;
+        }
+        p{
+            margin: 5px 0px;
+        }
+        .answers{
+            display: flex;
+            margin-bottom: 15px;
+            div{
+                flex-basis: 25%;
+
+                label{
+                    display: block;
+                    input{
+                        // height: 15px;
+                        width: 25px;
+                        background-color: var(--background-color);
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+    .signup {
+      height: 30px;
+      width: 120px;
+      font-size: 12px;
+      padding: 5px 5px;
+      font-weight: 600;
+      border-radius: 8px;
+      border: none;
+      background-color: var(--primary-color);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      position: relative;
+      left: 45%;
+
+      img {
+        width: 15px;
+      }
+    }
+  }
+}

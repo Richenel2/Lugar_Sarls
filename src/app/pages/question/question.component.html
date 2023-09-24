@@ -1,0 +1,56 @@
+<div class="question">
+  <h2>Question {{ questions.id }}:</h2>
+  <p>{{ questions.question }}</p>
+  <div class="answers">
+    <div>
+      <label for="1"
+        ><input
+          required
+          type="radio"
+          value="1"
+          id="1"
+          [name]="questions.id"
+          (change)="onChange($event)"
+        />Tres difficile</label
+      >
+    </div>
+    <div>
+      <label for="2"
+        ><input
+          type="radio"
+          value="2"
+          (change)="onChange($event)"
+          [name]="questions.id"
+          id="2"
+        />Difficile</label
+      >
+    </div>
+    <div>
+      <label for="3"
+        ><input
+          value="3"
+          type="radio"
+          (change)="onChange($event)"
+          [name]="questions.id"
+          id="3"
+        />Moyen</label
+      >
+    </div>
+    <div>
+      <label for="4" (change)="onChange($event)"
+        ><input
+          value="4"
+          type="radio"
+          [name]="questions.id"
+          id="4"
+        />Facile</label
+      >
+    </div>
+    <div>
+      <label for="5" (change)="onChange($event)"
+        ><input value="5" type="radio" [name]="questions.id" id="" />Tres
+        facile</label
+      >
+    </div>
+  </div>
+</div>

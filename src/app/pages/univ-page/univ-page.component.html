@@ -1,0 +1,45 @@
+<div class="banner">
+    <a routerLink="">Home/</a>
+    <a routerLink="../../university">University/</a>
+    <a [routerLink]="['../../university',univData.id]">{{univData.name | titlecase}}</a>
+</div>
+<div class="container">
+    <div class="desc-container">
+        <div class="desc">
+            <div class="rating"></div>
+            <h1>{{univData.name}}</h1>
+            <p>{{univData.fee}}</p>
+            <img [src]="univData.img" alt="">
+            <div class="univ-desc">
+                <h3>Description</h3> 
+                <p>{{univData.desc}}</p>
+            </div>
+            <div class="formation">
+                <h2>Formation</h2>
+                <hr>
+                <div class="liste">
+                    <h3>Domaine</h3>
+                    <h3>Nombre d'annee</h3>
+                    <h3>Pension par an</h3>
+                    <hr>
+                </div>
+                <div class="liste" *ngFor="let domaine of univData.departments">
+                    <h3>{{domaine.name}}</h3>
+                    <h3>{{domaine.year}}</h3>
+                    <h3>{{domaine.fee}}</h3>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-container">
+        <div class="contact">
+            <form action="">
+                <label for="">Email<input type="email" name="" id="" placeholder="Email"></label>
+                <label for="">Message<textarea name="" id="" cols="30" rows="10"></textarea></label>
+                <button class="signup" type="submit" onClick="alert('Successfully sent')"><img src="../../../assets/icons/Filter_big.png" alt=""> &nbsp;Contact university</button>
+
+            </form>
+        </div>
+    </div>
+</div>
