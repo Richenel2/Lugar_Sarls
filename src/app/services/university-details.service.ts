@@ -8,8 +8,8 @@ import { UnivCart } from '../pages/Model/univ-cart';
 })
 export class UniversityDetailsService {
   constructor(private http: HttpClient) {}
-  url = 'https://kayra.alwaysdata.net/api/ecole/?p=1&page_size=20';
-  urlMetier="https://kayra.alwaysdata.net/api/metier/?p=1&page_size=20"
+  url = 'https://lugar.onrender.com/api/ecole/?p=1&page_size=20';
+  urlMetier="https://lugar.onrender.com/api/metier/?p=1&page_size=20"
 
 
   getAllMetiers(){

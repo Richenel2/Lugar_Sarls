@@ -7,8 +7,8 @@ import { Injectable } from '@angular/core';
 export class AuthServiceService {
 
   constructor(private http: HttpClient) { }
-  urlLogin='https://kayra.alwaysdata.net/api/login/'
-  urlSignup='https://kayra.alwaysdata.net/api/register/'
+  urlLogin='https://lugar.onrender.com/api/login/'
+  urlSignup='https://lugar.onrender.com/api/register/'
 
   postLogin(resource: any){
     return this.http.post<any>(this.urlLogin, resource)

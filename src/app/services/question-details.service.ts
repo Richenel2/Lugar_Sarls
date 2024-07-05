@@ -8,8 +8,8 @@ import { Question } from '../pages/Model/question';
 export class QuestionDetailsService {
 
   constructor(private http : HttpClient) { }
-  url='https://kayra.alwaysdata.net/api/question/'
-  urlRep='https://kayra.alwaysdata.net/api/corrige/'
+  url='https://lugar.onrender.com/api/question/'
+  urlRep='https://lugar.onrender.com/api/corrige/'
 
   getQuestion(){
     return this.http.get<Question>(this.url);
